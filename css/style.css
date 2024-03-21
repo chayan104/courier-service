@@ -1,0 +1,668 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    scroll-behavior: smooth;
+}
+
+
+.container{
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+@media (max-width:1199px) and (min-width:992px) {
+    .container{
+        margin-left: 80px;
+        margin-right: 80px;
+    }
+}
+@media (max-width:992px) and (min-width:768px) {
+    .container{
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+}
+@media (max-width:768px) and (min-width:576px) {
+    .container{
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+}
+@media (max-width:576px) and (min-width:01px) {
+    .container{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}
+
+
+.d-flex{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.size-1{
+    width: 48%; 
+}
+.size-2{
+    width: 31%;
+}
+.size-3{
+    width: 23%;
+}
+.m-top{
+    margin-top: 100px;
+}
+.navbar{
+    /* position: sticky; */
+    /* top: 0px; */
+    width: 100%;
+    background-color: aqua;
+    height: 120px;
+}
+
+.nav-main-div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 120px;
+    
+}
+.nav-child-div img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 300px;
+}
+.nav-child-div a{
+    text-decoration: none;
+    font-size: 17px;
+    color: rgb(0, 0, 0);
+    margin-left: 18px;
+}
+.nav-child-div a:hover{
+    color: rgb(111, 13, 13);
+    text-decoration: underline;
+}
+.nav-icon-logo{
+    display: none;
+}
+.nav-show-div{
+    display: none;
+}
+.nav-inner-show a{
+    display: block;
+}
+@media (max-width:1150px) and (min-width:900px) {
+    .nav-child-div a{
+        font-size: 14px;
+    }
+    .nav-child-div img{
+        width: 80px;
+        height: 80px;
+        object-fit: cover;
+        border-radius: 300px;
+    }
+}
+@media (max-width:900px) and (min-width:01px){
+    .nav-icon-logo{
+        display: block;
+    }
+    .nav-main-div{
+        display: flex;
+        justify-content: end!important;
+    }
+    .nav-child-div{
+        display: none;
+    }
+    .nav-icon-logo i{
+        font-size: 20px;
+    }
+    .nav-show-div{
+        width: 100%;
+        height: 300px;
+        background-color: aqua;
+    }
+    .nav-inner-show{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .nav-inner-show img{
+        width: 70px;
+        height: 70px;
+        object-fit: cover;
+        border-radius: 300px;
+        margin-bottom: 15px;
+    }
+    .nav-inner-show a{
+        margin-bottom: 15px;
+        text-decoration: none;
+        color: black;
+    }
+    .nav-inner-show a:hover{
+        color: red;
+        text-decoration: underline;
+    }
+}
+
+
+
+.banner{
+    width: 100%;
+    height: 550px;
+    /* background-color: aqua; */
+    background-image: url("../image/WhatsApp\ Image\ 2024-03-10\ at\ 7.22.14\ AM.jpeg");
+    background-size: cover;
+}
+.child-banner-2 {
+    display: flex;
+    align-items: center;
+    height: 550px;
+}
+.child-banner-1 p{
+    color: white;
+    font-size: 18px;
+}
+.child-banner-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 550px;
+}
+.child-banner-1 h1{
+    color: white;
+    font-size: 50px;
+    margin-bottom: 40px;
+}
+.child-banner-2 img{
+    width: 100%;
+    height: 300px;
+    animation-name: me;
+    animation-duration: 5s;
+    animation-delay: 5s ease;
+    animation-iteration-count: infinite;
+}
+@keyframes me {
+    from{
+        width: 90%;
+        height: 250px;
+    }
+    to{
+        width: 100%;
+        height: 300px;
+    }
+}
+
+@media (max-width:1250px) and (min-width:900px) {
+    .child-banner-2 img{
+        width: 100%;
+        height: 250px;
+        animation-name: me;
+        animation-duration: 5s;
+        animation-delay: 5s ease;
+        animation-iteration-count: infinite;
+    }
+    @keyframes me {
+        from{
+            width: 90%;
+            height: 200px;
+        }
+        to{
+            width: 100%;
+            height: 250px;
+        }
+    }
+    .child-banner-1 p{
+        color: white;
+        font-size: 14px;
+    }
+    .child-banner-1 h1{
+        color: white;
+        font-size: 35px;
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width:900px) and (min-width:01px) {
+    .size-1{
+        width: 100%;
+    }
+    .banner{
+        height: 1000px;
+        
+    }
+    .main-banner{
+        display: flex;
+        justify-content: center!important;
+        align-items: center!important;
+        height: 1000px;
+        /* flex-direction: column-reverse; */
+    }
+}
+
+
+@media (max-width:500px) and (min-width:250px) {
+    .banner h1{
+        font-size: 30px;
+    }
+}
+@media (max-width:250px) and (min-width:01px) {
+    .banner h1{
+        font-size: 24px;
+    }
+    .banner p{
+        font-size: 15px;
+    }
+}
+
+
+.about-bike-img{
+    width: 100%;
+    height: 400px;
+    animation-name: chayan;
+    animation-duration: 5s;
+    animation-delay: 5s ease;
+    animation-iteration-count: infinite;
+}
+@keyframes chayan {
+    from{
+        
+        margin-left: -300px;
+    }
+    to{
+       margin-left: 200px;
+    }
+}
+.child-about-2 h1{
+    margin-bottom: 40px;
+    font-size: 45px;
+    color: rgb(8, 1, 35);
+}
+.child-about-2 p{
+    line-height: 22px;
+    font-size: 18px;
+    color: rgb(54, 52, 50);
+    margin-bottom: 40px;
+}
+.child-about-2 a{
+    padding: 10px 20px 10px 20px;
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background-color: #F39F39;
+    border-radius: 5px;
+}
+
+.crew{
+    width: 100%;
+    height: 500px;
+    background-image: url("../image/cycle\ bg.png");
+    background-size: cover;
+    background-attachment: fixed;
+    /* background-position: center; */
+}
+.crew h2{
+    text-align: center;
+    font-size: 50px;
+    color: rgb(8, 1, 35);
+}
+.card{
+    margin-top: -150px;
+}
+
+.card-child-div{
+    height: 300px;
+    border-radius: 10px;
+    background-color: #253138;
+}
+
+.card-child-div img{
+    width:60px ;
+    height: 60px;
+    padding: 20px 20px 20px 20px;
+    margin-top: -70px;
+    margin-left: 20px;
+    margin-bottom: 30px;
+    border-radius: 7px;
+    background-color: #BDC87B;
+    display: inline-block;
+}
+.card-child-div h3{
+    margin-left: 20px;
+    color: white;
+    margin-bottom: 30px;
+}
+.card-child-div p{
+    margin-left: 20px;
+    color: white;
+    margin-bottom: 30px;
+    line-height: 22px;
+}
+.card-child-div a{
+   padding: 10px 20px 10px 20px;
+   background-color: #F39F39;
+   color: white;
+   font-size: 17px;
+   display: inline-block;
+   border-style: none;
+   border-radius: 7px;
+   text-decoration: none;
+   margin-left: 20px;
+}
+
+
+.delivery{
+    width: 100%;
+    height: 600px;
+   background-image: url("../image/end-bg.png");
+   background-size: cover;
+   
+}
+.delivery h2{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 45px;
+    margin-bottom: 30px;
+}
+.delivery p{
+
+    line-height: 22px;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+.delivery-child-div{
+    text-align: center;
+    margin-top: 40px;
+    /* height: 280px; */
+    /* box-shadow: 10px 10px 5px grey; */
+}
+.delivery-child-div i{
+    color: white;
+    padding: 20px 20px 20px 20px;
+    background-color: #BDC87B;
+    margin-bottom: 30px;
+    border-radius: 5px;
+}
+.delivery-child-div h3{
+    color: #ffffff;
+    margin-bottom: 30px;
+}
+.delivery-child-div p{
+   text-align: center;
+    color: rgb(255, 255, 255);
+    margin-bottom: 30px;
+}
+.delivery-child-div a{
+    color: #F39F39;
+    text-decoration: none;
+}
+
+
+
+
+.slide-sec{
+   
+        position: relative;
+        height: 400px;
+ 
+}
+.slide-sec h2{
+    color: #253138;
+    font-size: 45px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #ffffff;
+    display: flex!important;
+    justify-content: center!important;
+    align-items: center!important;
+    flex-direction: column!important;
+    height: 400px;
+    box-shadow: 0px 10px 10px grey;
+  }
+
+  .swiper-slide img {
+    /* display: block; */
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 300px;
+    margin-bottom: 30px;
+  }
+  .swiper-slide h3{
+    margin-bottom: 20px;
+  }
+  
+  .slide-icon i{
+    color: #F39F39;
+    margin-bottom: 30px;
+  }
+
+
+ 
+
+  .end{
+    margin-top: 100px;
+    width: 100%;
+    height: 600px;
+    background-image: url("../image/ftr\ bg.png");
+    background-size: cover;
+  }
+  .end-child-div{
+    width: 20%;
+    text-align: center;
+  }
+  /* .end-main-div{
+    display: flex;
+    align-items: center;
+    height: 400px;
+  } */
+  .end-icon i{
+    font-size: 20px;
+    /* padding: 15px;
+    border-radius: 300px;
+    background-color:white ; */
+    color: #ffffff;
+  }
+  .end-child-div a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    line-height: 30px;
+    
+  }
+  .end-child-div h3{
+    color: white;
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+@media (max-width:1200px) and (min-width:1000px) {
+    .delivery-child-div p{
+        font-size: 15px;
+    }
+    .card-child-div p{
+        font-size: 15px;
+    }
+}
+@media (max-width:1000px) and (min-width:650px) {
+    .size-3{
+        width: 48%;
+    }
+    .size-2{
+        width: 100%;
+    }
+    .crew{
+        height: 1550px;
+    }
+    .card{
+        margin-top: -1250px;
+    }
+    .card-child-div{
+        margin-bottom: 100px;
+    }
+    .delivery{
+        height: 900px;
+        background-size: cover;
+        background-position: center;
+    }
+    .child-about-1 img{
+        animation-name: chayan;
+        animation-duration: 5s;
+        animation-delay: 5s ease;
+        animation-iteration-count: infinite;
+    }
+    @keyframes chayan {
+        from{
+        
+            margin-left: -300px;
+        }
+        to{
+           margin-left: 70px;
+        }
+    }
+    .child-about-2 h1{
+        font-size: 40px;
+    }
+    .about{
+        margin-bottom: 70px;
+    }
+    .delivery{
+        margin-top: 150px;
+    }
+   
+    
+}
+@media (max-width:650px) and (min-width:01px) {
+    .size-3{
+        width: 100%;
+    }
+    .delivery{
+        height: 1450px;
+        background-size: cover;
+        background-position: center;
+    }
+    .child-banner-2 img{
+        animation-name: me;
+        animation-duration: 4s;
+        animation-delay: 4s ease;
+        animation-iteration-count: infinite;
+    }
+    @keyframes me {
+        from{
+            width: 300px;
+        }
+        to{
+            width:350px
+        }
+    }
+    .child-about-1 img{
+        animation-name: chayan;
+        animation-duration: 5s;
+        animation-delay: 5s ease;
+        animation-iteration-count: infinite;
+    }
+    @keyframes chayan {
+        from{
+        
+            margin-left: -300px;
+        }
+        to{
+           margin-left: 00px;
+        }
+    }
+    .child-about-2 h1{
+        font-size: 35px;
+    }
+    .about{
+        margin-bottom: 70px;
+    }
+    .size-2{
+        width: 100%;
+    }
+    .crew{
+        height: 1550px;
+    }
+    .card{
+        margin-top: -1250px;
+    }
+    .card-child-div{
+        margin-bottom: 100px;
+    }
+    .delivery{
+        height: 1450px;
+        background-size: cover;
+        background-position: center;
+    }
+    .delivery p{
+        font-size: 18px;
+    }
+    .end{
+        height: 900px;
+        background-size: cover;
+        background-position: center;
+    }
+    .end-child-div{
+        width: 31%;
+        margin-bottom: 60px;
+    }
+    .end-main-div{
+        display: flex;
+        justify-content: start!important;
+    }
+}
+@media (max-width:1000px) and (min-width:500px) {
+    .end{
+        height: 900px;
+    }
+    .end-child-div{
+        width: 31%;
+        margin-bottom: 60px;
+    }
+    .end-main-div{
+        display: flex;
+        justify-content: start!important;
+    }
+}
+@media (max-width:500px) and (min-width:300px) {
+    .end{
+        height: 1100px;
+        background-position: center;
+        background-size: cover;
+    }
+    .end-child-div{
+        width: 48%;
+        margin-bottom: 60px;
+    }
+    .end-main-div{
+        display: flex;
+        justify-content: start!important;
+    }
+}
+@media (max-width:350px) and (min-width:01px) {
+    .end{
+        height: 1350px;
+        background-position: center;
+        background-size: cover;
+    }
+    .end-child-div{
+        width: 100%;
+        margin-bottom: 60px;
+    }
+    .end-main-div{
+        display: flex;
+        justify-content: start!important;
+    }
+
+}
+
